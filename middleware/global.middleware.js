@@ -1,5 +1,6 @@
 const cors = require("cors")
 const morgan = require("morgan")
-const middleware = [cors(),morgan('dev')]
+const express = require('express')
+const middleware = [cors(),morgan('dev'),express.json()]
 
 module.exports = middleware
