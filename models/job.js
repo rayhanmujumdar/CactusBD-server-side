@@ -16,14 +16,14 @@ const jobsSchema = new Schema({
         }
     },
     phone: {
-        type: Number,
+        type: String,
         require: [true,"Must be required"],
         validate: {
             validator: phoneValidate,
             message:  props => `${props.value} is not a valid phone number!`
         }
     },
-    cvLink: {
+    cvUrl: {
         type: String,
         require: [true,"Must be require"],
         validate: {
