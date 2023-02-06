@@ -16,7 +16,7 @@ exports.createController = async (req,res,next) => {
     }
 }
 
-exports.getBlogsController = async (req,res,next) => {
+exports.getBlogsController = async (_req,res,next) => {
     try{
         const blogs = await Blogs.find({})
         if(blogs.length){
